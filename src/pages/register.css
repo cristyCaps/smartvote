@@ -1,0 +1,132 @@
+/* Layout */
+.register-page {
+  display: flex;
+  min-height: 90vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Left illustration panel */
+.register-illustration {
+  position: relative;
+  width: 45%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.register-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 237, 237, 0.269);
+  z-index: 1;
+}
+
+/* Right form panel */
+.register-container {
+  width: 65%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 600px; /* Increased width */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headline */
+.register-form h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+.input-wide {
+  flex: 2; /* Full Name takes more space */
+}
+
+.input-narrow {
+  flex: 1; /* School ID takes less space */
+}
+
+.input-wide input,
+.input-narrow input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Input group layout */
+.form-row {
+  display: flex;
+  gap: 20px; /* More space between columns */
+  margin-bottom: 20px; /* More vertical space */
+}
+
+/* Row inputs shared styles */
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 14px 16px;   /* Larger and more spacious */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+/* Single-column inputs (e.g., password) */
+.register-form input,
+.register-form select {
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: 0.2s ease;
+}
+
+/* Focus effect */
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #3f51b5;
+}
+
+/* Submit button */
+.register-form button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.register-form button:hover {
+  background-color: #2e3a8a;
+}
+
+/* Login redirect */
+.login-redirect {
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: center;
+}
